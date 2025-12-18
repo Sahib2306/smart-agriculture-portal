@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background-image: url('https://farmhacker.com/wp-content/uploads/2020/03/dirt-road-between-fences-and-beautiful-sunset-farm-background-wallpaper-pictures.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh;
+            margin: 0; 
+
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .login-main-block .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            opacity: 0.8;
+        }
+        .login-main-block input, select, button {
+            display: block;
+            width: 90%;
+            margin: 10px 0;
+            padding: 8px;
+        }
+        .login-main-block .su-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .toggle-link {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        #login-form {
+            display: none;
+        }
+        .login-main-block .container h2{
+            color: rgb(57, 236, 57);
+            text-shadow: 0 0 3px #ff0000;
+            font-size: 30px;
+        }
+        h3{
+            color: brown; 
+            text-shadow: 0 0 3px #e7620a;
+
+        }
+    </style>
+</head>
+<body>
+<div id="login" class="login-main-block">
+        <div class="container">
+        <h2>User Authentication</h2>
+        <div id="auth-forms">
+            <form id="signup-form">
+                <h3>Sign Up</h3>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <select>
+                    <option value="farmer">Farmer</option>
+                    <option value="buyer">Buyer</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit" class=""su-btn>Sign Up</button>
+                <span class="toggle-link" onclick="toggleForms()">Already a user? Login</span>
+            </form>
+            
+            <form id="login-form">
+                <h3>Login</h3>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <span class="toggle-link" onclick="toggleForms()">New user? Sign Up</span>
+            </form>
+        </div>
+    </div>
+</div>
+    <script>
+        function toggleForms() {
+            let signupForm = document.getElementById("signup-form");
+            let loginForm = document.getElementById("login-form");
+            
+            if (signupForm.style.display === "none") {
+                signupForm.style.display = "block";
+                loginForm.style.display = "none";
+            } else {
+                signupForm.style.display = "none";
+                loginForm.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
