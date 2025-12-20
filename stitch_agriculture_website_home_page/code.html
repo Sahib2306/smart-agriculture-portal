@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriTech - The Future of Farming</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        // Updated color scheme for Modern Control Center
+                        "primary": "#32CD32", // Electric Lime Green
+                        "background-dark": "#121212", // Deep Charcoal
+                        "background-light": "#1A1A1A", // Slightly lighter charcoal for contrast
+                        "dark-accent-1": "#1E1E1E",
+                        "dark-accent-2": "#282828",
+                        "gray-text-dark": "#888888", // For subtle text
+                        "border-dark": "#333333", // For borders in dark mode
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    boxShadow: {
+                        'glow-sm': '0 0 5px rgba(50, 205, 50, 0.6)',
+                        'glow-md': '0 0 10px rgba(50, 205, 50, 0.8)',
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">.btn-glow {
+            box-shadow: 0 0 5px rgba(50, 205, 50, 0.6);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 10px rgba(50, 205, 50, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-dark bg-background-dark/95 backdrop-blur px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">agriculture</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">AgriTech</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact Info</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Features</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Learning</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:brightness-125 transition-all text-background-dark text-sm font-bold leading-normal tracking-[0.015em] btn-glow">
+<span class="truncate">Get Started</span>
+</button>
+<button class="md:hidden p-2 text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center w-full">
+<section class="w-full px-4 md:px-10 lg:px-40 py-16 max-w-[1440px]">
+<div class="@container">
+<div class="flex flex-col-reverse lg:flex-row gap-8 lg:items-center">
+<div class="flex flex-col gap-6 lg:w-1/2 justify-center">
+<div class="flex flex-col gap-4 text-left">
+<span class="text-primary font-bold tracking-wider text-sm uppercase">Smart Agriculture Solutions</span>
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em]">
+                                    The Future of <br/><span class="text-primary">Sustainable Farming</span> is Here
+                                </h1>
+<p class="text-lg text-gray-400 font-normal leading-relaxed max-w-lg">
+                                    Discover sustainable practices and cutting-edge technology to grow better crops and manage your farm efficiently. Join the revolution today.
+                                </p>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="bg-dark-accent-1 border border-border-dark p-4 rounded-lg flex flex-col gap-1">
+<p class="text-primary text-2xl font-bold">98%</p>
+<span class="text-gray-text-dark text-sm">Yield Accuracy</span>
+</div>
+<div class="bg-dark-accent-1 border border-border-dark p-4 rounded-lg flex flex-col gap-1">
+<p class="text-primary text-2xl font-bold">+30%</p>
+<span class="text-gray-text-dark text-sm">Efficiency Boost</span>
+</div>
+<div class="bg-dark-accent-1 border border-border-dark p-4 rounded-lg flex flex-col gap-1">
+<p class="text-primary text-2xl font-bold">10K+</p>
+<span class="text-gray-text-dark text-sm">Farmers Joined</span>
+</div>
+<div class="bg-dark-accent-1 border border-border-dark p-4 rounded-lg flex flex-col gap-1">
+<p class="text-primary text-2xl font-bold">75%</p>
+<span class="text-gray-text-dark text-sm">Water Saved</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary hover:brightness-125 transition-all text-background-dark text-base font-bold leading-normal tracking-[0.015em] btn-glow">
+<span class="truncate">Explore Solutions</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 border-2 border-border-dark hover:border-primary bg-transparent text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+<span class="truncate">Watch Demo</span>
+</button>
+</div>
+<div class="flex items-center gap-4 pt-4 text-sm font-medium text-gray-text-dark">
+<div class="flex -space-x-2">
+<img alt="User avatar 1" class="w-8 h-8 rounded-full border-2 border-background-dark" data-alt="Portrait of a smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbfUmqFeMPvm_vVL8Sby_mdHOLDqrsKiTST7t_4navFCMQ9o8T9k3rsLq3hY1rAWhhXjmEVDG0G5V_huQ5HV0ZATKyD2ICdNGaaT0xDaCBakYDTUrQR5-eScZPojh2Zw80P_99jYfd7i1VQqEas9Vk4yTI5lwnaTlgBJ97cZIyaydJm82Xyin9XBBgDgZs5wZSARqjefISnuQD5CZaBU3Q2BlLvoaYkUERufQxCc56ZgGDPmuucZuF61x0MrKhNKBG7p0fSJ_xZ6k"/>
+<img alt="User avatar 2" class="w-8 h-8 rounded-full border-2 border-background-dark" data-alt="Portrait of a man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXu_jM4doErSb7UFR38kKq1tGyPBcji9-xdZVXVWOUM3Ez7sIxpWNGwHuhTPrksaVjREwySvhG0iEAWIgc0h8sG0p007ZnZHoE-TAuXKX2wd7dkzIPmv7Q8tt3lIqp_R7eWUy6mUebBHtRB4PN-hMuURDyM2dk_819t_PZ0uAnL90xxEPVXMkoLYtcEfrA2ZGu2tl--32Wa1LHQhYVjdV_4oLLxfkRsvBwE8YPsrRuDhqN99kXKaSEABicXAAQYBVApa3gca1D864"/>
+<img alt="User avatar 3" class="w-8 h-8 rounded-full border-2 border-background-dark" data-alt="Portrait of a smiling man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj3vpDLZWOW-E2m-6yW4ljSKVe8MP33zzPRbyHKlCfPEoF8bA0JK5QrChHZQ1f1tXJ88d3otMoT0KgSDchWfC02neA9LArtDGp76EpydaygbqiiWeej0aPxX1UjWKJst9SIm9T-UsfZMNVM1rKqTqPheb0EWN3p7U56BL9Rm-9lXcDJnBe18OlFVsMgav6T8Uq2sOHzBMmI1F5JCnL82BPnB-nOf1CJ8gs5dl1Xg7MQt9123g1jWBKeeIIi4N-rnH6kTNhC0UKlSo"/>
+</div>
+<p>Trusted by 10,000+ farmers worldwide</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2 aspect-[4/3] rounded-xl overflow-hidden relative shadow-2xl shadow-primary/20">
+<img alt="Dramatic, high-tech drone view of fields with subtle, abstract data overlays" class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="Drone flying over green farm fields" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcd7l86bxx6BQWXfZX4cWljS5VVtmblIVfZfQ9z3RRxDHIgILSL4--pmGQgGxeRMoAaXGxDUHFVjKaQmigGjuR-RGvc8Vl5tmpR44kM3g_RKNOio0kE22GaoWgpNyEKRNoo6eAf9q93I7BgUYfN58nHRGdLDuEJecp_I49dN4ZRFk2pXyGi43zcE2_waH5Qh3eRY7hJSPVRdmR11NWgJU38oQlgLU7Mclydu_6N_OMnf68T1RhUml1B3Mv7QzBjSThlbv9faWr1RY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center p-4">
+<svg class="absolute inset-0 w-full h-full opacity-30" fill="none" preserveAspectRatio="none" stroke="currentColor" stroke-width="0.5" viewBox="0 0 100 100">
+<defs>
+<pattern height="10" id="grid" patternUnits="userSpaceOnUse" width="10">
+<path d="M 10 0 L 0 0 L 0 10" fill="none" stroke="rgba(50, 205, 50, 0.2)" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100" width="100"></rect>
+</svg>
+<div class="absolute top-4 left-4 text-primary text-xs font-mono bg-background-dark/70 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-lg align-middle">satellite_alt</span> FIELD_ID: AGX7-B42
+</div>
+<div class="absolute bottom-4 right-4 text-primary text-xs font-mono bg-background-dark/70 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-lg align-middle">data_exploration</span> DATA STREAM ACTIVE
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full px-4 md:px-10 lg:px-40 py-16 bg-dark-accent-1 max-w-full border-y border-border-dark">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-10">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] max-w-[720px]">
+                            Key Features for Modern Farmers
+                        </h2>
+<p class="text-gray-text-dark text-lg font-normal leading-normal max-w-[720px]">
+                            We provide the tools and knowledge you need for modern sustainable agriculture, combining tradition with technology.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group flex flex-col gap-4 rounded-xl border border-border-dark bg-dark-accent-2 p-6 hover:shadow-lg hover:shadow-primary/20 transition-all cursor-pointer">
+<div class="flex justify-between items-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<span class="text-primary text-sm font-bold">85% Optimized</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold leading-tight">Sustainable Practices</h3>
+<p class="text-gray-text-dark text-sm leading-relaxed">
+                                    Eco-friendly methods to ensure long-term soil health and yield maximization without harming the environment.
+                                </p>
+</div>
+<div class="w-full bg-border-dark rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-border-dark bg-dark-accent-2 p-6 hover:shadow-lg hover:shadow-primary/20 transition-all cursor-pointer">
+<div class="flex justify-between items-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">memory</span>
+</div>
+<span class="text-primary text-sm font-bold">Active Integration</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold leading-tight">New Technologies</h3>
+<p class="text-gray-text-dark text-sm leading-relaxed">
+                                    Integration with the latest IoT sensors, automated machinery, and AI-driven crop analysis.
+                                </p>
+</div>
+<div class="w-full bg-border-dark rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-border-dark bg-dark-accent-2 p-6 hover:shadow-lg hover:shadow-primary/20 transition-all cursor-pointer">
+<div class="flex justify-between items-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</div>
+<span class="text-primary text-sm font-bold">Progress 70%</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold leading-tight">Educational Resources</h3>
+<p class="text-gray-text-dark text-sm leading-relaxed">
+                                    Access a vast library of guides, tutorials, and expert webinars to stay ahead of the curve.
+                                </p>
+</div>
+<div class="w-full bg-border-dark rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full px-4 md:px-10 lg:px-40 py-16 max-w-[1280px]">
+<div class="flex flex-col gap-8">
+<div class="flex items-center justify-between pb-4 border-b border-border-dark">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em]">Latest Learning Resources</h2>
+<a class="text-primary font-bold hover:underline flex items-center gap-1" href="#">
+                            View All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col rounded-xl bg-dark-accent-1 shadow-sm hover:shadow-md hover:shadow-primary/10 transition-shadow border border-border-dark overflow-hidden">
+<div class="h-48 w-full bg-gray-200 relative">
+<img alt="Infographic-style image of smart irrigation system with data points" class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="Irrigation sprinklers watering a green field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwyCwkAZ_o9OF7H8QVRuA9CVqG6s0fM7G5WJ7pWa0kIft109CVP0v0lZ7JfPGUE8DkujkBgCyjG0aSDJRAg6xeBaZLxe7ncySWaACKz9R2nCBX7GLcDxVEEMU5O-ZfGgtnhAG-aWzgZPoxUZzLIZJmmyjabjnobYOlgp2g88d3aD82HdA3RItXDW9dhwBnSON6MxeY902GdJxDZFQ34usaaT4h5SZOsWp9AeVB4gz_509R40Xf_sFW4imlSsIGXqXBWUnNJcNvAlY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-dark-accent-1/80 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 bg-primary text-background-dark text-xs font-bold px-3 py-1 rounded-full uppercase">Technology</div>
+<div class="absolute bottom-4 left-4 text-white text-xs font-mono bg-background-dark/70 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-lg align-middle">water_drop</span> OPTIMAL_FLOW: 1.2L/min
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold leading-tight">Modern Irrigation Techniques</h3>
+<p class="text-gray-text-dark text-sm font-normal leading-normal">
+                                        Learn how smart irrigation systems can reduce water usage by up to 30% while maintaining optimal crop hydration levels.
+                                    </p>
+</div>
+<div class="mt-auto">
+<button class="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors group px-4 py-2 rounded-lg border border-border-dark hover:border-primary btn-glow">
+                                        Read Article
+                                        <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col rounded-xl bg-dark-accent-1 shadow-sm hover:shadow-md hover:shadow-primary/10 transition-shadow border border-border-dark overflow-hidden">
+<div class="h-48 w-full bg-gray-200 relative">
+<img alt="Technical diagram of data-driven crop management on a tablet" class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="Farmer using digital tablet in a corn field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADETLxHCIEezoSjvyqVMyJHNSUueKBwe3-N8vXvM_qVgfDLHUKtiDhC1d47-2T1FXGAUCJgmrf2Kk70M4pfPCZZxztKOI7CjtGVmeUHngOlzqthFDGSuRZW7_MTlziUs52W2cHNJTBLm2KCZUN8M3eqTuwb0cVlEmhIS7W1CS-rGrSnpxgxGZQJvUYvmYuHP_FATTxd2hv_ED6S8ExXvE__QC1PNJDkW88Kz0FfxQSURTJuj3s6VTC71nQYvg38McTPORKghm0zOk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-dark-accent-1/80 via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 bg-white/10 text-white text-xs font-bold px-3 py-1 rounded-full uppercase border border-border-dark">Management</div>
+<div class="absolute bottom-4 left-4 text-white text-xs font-mono bg-background-dark/70 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-lg align-middle">analytics</span> PREDICTIVE_ANALYTICS: ENABLED
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-1">
+<div class="flex flex-col gap-2">
+<h3 class="text-xl font-bold leading-tight">Data-Driven Crop Management</h3>
+<p class="text-gray-text-dark text-sm font-normal leading-normal">
+                                        Understand how to utilize farm data to predict yields, prevent diseases, and optimize harvesting schedules efficiently.
+                                    </p>
+</div>
+<div class="mt-auto">
+<button class="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors group px-4 py-2 rounded-lg border border-border-dark hover:border-primary btn-glow">
+                                        Read Article
+                                        <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full px-4 md:px-10 lg:px-40 py-20 bg-dark-accent-1 border-t border-border-dark">
+<div class="max-w-[960px] mx-auto text-center flex flex-col items-center gap-8">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-background-dark mb-2">
+<span class="material-symbols-outlined text-4xl">mail</span>
+</div>
+<h2 class="text-3xl md:text-4xl font-black leading-tight">Stay Updated with AgriTech</h2>
+<p class="text-gray-400 max-w-lg text-lg">
+                        Join our community of modern farmers. Get the latest tips on sustainable farming and technology delivered to your inbox.
+                    </p>
+<div class="flex flex-col sm:flex-row w-full max-w-md gap-3">
+<input class="flex-1 h-12 rounded-lg px-4 bg-white/10 border border-border-dark text-white placeholder:text-gray-text-dark focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter your email address" type="email"/>
+<button class="h-12 px-8 bg-primary hover:brightness-125 text-background-dark font-bold rounded-lg transition-colors whitespace-nowrap btn-glow">
+                            Subscribe
+                        </button>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full border-t border-border-dark bg-background-dark py-10 px-4 md:px-10 lg:px-40">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start gap-10">
+<div class="flex flex-col gap-4 max-w-xs">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary text-2xl">agriculture</span>
+<h2 class="text-lg font-bold">AgriTech</h2>
+</div>
+<p class="text-sm text-gray-text-dark">
+                        Empowering farmers with technology and sustainable practices for a better tomorrow.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-12 md:gap-20">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Platform</h4>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">Features</a>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Resources</h4>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">Learning Center</a>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">Community</a>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white">Contact</h4>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">support@agritech.com</a>
+<a class="text-sm text-gray-text-dark hover:text-primary transition-colors" href="#">+1 (555) 123-4567</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto mt-10 pt-6 border-t border-border-dark flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-text-dark">© 2024 AgriTech Inc. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="text-gray-text-dark hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-gray-text-dark hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
